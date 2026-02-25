@@ -1,42 +1,43 @@
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     background-image: url("img/back.jpg");
     background-size: cover;
+    background-attachment: fixed;
 }
 
 /* NAVBAR */
 nav {
-    background: black;
-    color: white;
+    background-color: black;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px;
-}
-
-.logo {
-    width: 70px;
+    padding: 10px 30px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 50px;
-    margin-left: 50px;
+    gap: 40px;
+    color: white;
 }
 
 nav ul li {
     cursor: pointer;
 }
 
+.logo img {
+    height: 60px;
+}
+
 /* BANNER */
 .banner img {
     width: 100%;
-    height: 120px;
+    border: 3px solid black;
 }
 
 /* MAIN CONTAINER */
-.container {
+.main-container {
     display: flex;
     gap: 10px;
     padding: 10px;
@@ -44,64 +45,58 @@ nav ul li {
 
 .column {
     flex: 1;
-    background: #f2f2f2;
+    background-color: #f2f2f2;
+    border: 2px solid black;
     padding: 10px;
-    border: 2px solid gray;
 }
 
-/* BOXES */
-.box {
-    border: 1px solid gray;
-    padding: 10px;
-    margin-bottom: 10px;
+.col2 {
+    background-image: url("img/back2.jpg");
+    background-size: cover;
+    padding: 20px;
+}
+
+.inner-box {
+    background-color: rgba(255,255,255,0.85);
+    padding: 15px;
+}
+
+.section {
+    margin-bottom: 15px;
+}
+
+.border-bottom {
+    border-bottom: 2px solid gray;
+    padding-bottom: 15px;
 }
 
 /* TITLES */
 .title-black {
-    background: black;
+    background-color: black;
     color: white;
-    padding: 5px;
-    border-radius: 20px;
+    padding: 8px;
+    border-radius: 15px;
 }
 
 .title-blue {
-    background: blue;
+    background-color: blue;
     color: white;
-    padding: 5px;
-    border-radius: 20px;
-}
-
-/* COLUMN 2 BACKGROUND */
-.background-column {
-    background-image: url("img/back2.jpg");
-    background-size: cover;
-}
-
-.inner-box {
-    background: white;
-    padding: 15px;
+    padding: 8px;
+    border-radius: 15px;
 }
 
 /* IMAGES */
-.full-img {
+.image {
     width: 100%;
     margin-top: 10px;
 }
 
 /* INPUTS */
 input {
-    width: 100%;
-    margin-bottom: 8px;
+    margin: 3px;
 }
 
 button {
     margin-top: 10px;
-    padding: 5px;
-    width: 100%;
-    cursor: pointer;
-}
-
-.rules {
-    font-size: 13px;
-    margin-top: 10px;
+    padding: 5px 10px;
 }
