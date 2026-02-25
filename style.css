@@ -10,28 +10,38 @@ body {
 nav {
     background-color: black;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 10px 30px;
+    gap: 60px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 40px;
+    gap: 80px;
     color: white;
+    flex: 1;
+    justify-content: center;
 }
 
 nav ul li {
     cursor: pointer;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 
 .logo img {
     height: 60px;
+    border: 3px solid white;
+    padding: 5px;
+    background-color: white;
 }
 
 /* BANNER */
 .banner img {
+    height: 100px;
     width: 100%;
     border: 3px solid black;
 }

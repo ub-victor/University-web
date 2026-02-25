@@ -2,9 +2,9 @@ function calculate() {
 
     let cw = parseFloat(document.getElementById("cw").value) || 0;
     let mid = parseFloat(document.getElementById("mid").value) || 0;
-    let exam = parseFloat(document.getElementById("exam").value) || 0;
+    let fin = parseFloat(document.getElementById("fin").value) || 0;
 
-    let total = cw + mid + exam;
+    let total = cw + mid + fin;
     let average = total / 3;
     let grade;
 
