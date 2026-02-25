@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-image: url("img/back.jpg");
+    background-size: cover;
+}
+
+/* NAVBAR */
+nav {
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    width: 70px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin-left: 50px;
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+/* BANNER */
+.banner img {
+    width: 100%;
+    height: 120px;
+}
+
+/* MAIN CONTAINER */
+.container {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.column {
+    flex: 1;
+    background: #f2f2f2;
+    padding: 10px;
+    border: 2px solid gray;
+}
+
+/* BOXES */
+.box {
+    border: 1px solid gray;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* TITLES */
+.title-black {
+    background: black;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.title-blue {
+    background: blue;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+/* COLUMN 2 BACKGROUND */
+.background-column {
+    background-image: url("img/back2.jpg");
+    background-size: cover;
+}
+
+.inner-box {
+    background: white;
+    padding: 15px;
+}
+
+/* IMAGES */
+.full-img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* INPUTS */
+input {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.rules {
+    font-size: 13px;
+    margin-top: 10px;
+}

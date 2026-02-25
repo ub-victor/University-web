@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IT Web Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <img src="img/logo2.png" class="logo">
+        <ul>
+            <li>HOME</li>
+            <li>APPLICATION</li>
+            <li>STUDENTS</li>
+            <li>MARKS</li>
+            <li>ACADEMICS</li>
+        </ul>
+    </nav>
+
+    <!-- BANNER -->
+    <div class="banner">
+        <img src="img/banner2.PNG">
+    </div>
+
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+
+        <!-- COLUMN 1 -->
+        <div class="column">
+
+            <div class="box">
+                <h3 class="title-black">About AUCA</h3>
+                <p>
+                    The Adventist University of Central Africa (AUCA) known as MUDENDE
+                    is a Seventh-day Adventist Institution of Higher Learning...
+                </p>
+                <img src="img/pic11.jpg" class="full-img">
+            </div>
+
+            <div class="box">
+                <h3 class="title-blue">AUCA: A Modern-Day Calling</h3>
+                <p>
+                    From the very beginning, God called Israel to be a light to the nations...
+                </p>
+            </div>
+
+        </div>
+
+        <!-- COLUMN 2 -->
+        <div class="column background-column">
+            <div class="inner-box">
+                <h3>Description of IT Faculty</h3>
+                <p>
+                    The Faculty of Information Technology is the unique Faculty into the Schools of Sciences...
+                </p>
+
+                <h4>Departments in AUCA:</h4>
+                <ul>
+                    <li>Software Engineering</li>
+                    <li>Networking</li>
+                    <li>Information Technology</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- COLUMN 3 -->
+        <div class="column">
+
+            <div class="box">
+                <h3>CALCULATE STUDENTS MARKS:</h3>
+
+                <label>Student Names:</label>
+                <input type="text">
+
+                <label>Student ID:</label>
+                <input type="text">
+
+                <label>Department:</label>
+                <input type="text">
+
+                <label>Course Work /30:</label>
+                <input type="number" id="cw">
+
+                <label>Mid-Term /30:</label>
+                <input type="number" id="mid">
+
+                <label>Final Exam /40:</label>
+                <input type="number" id="exam">
+
+                <button onclick="calculate()">Calculate</button>
+            </div>
+
+            <div class="box">
+                <label>Total</label>
+                <input type="text" id="total" readonly>
+
+                <label>Average</label>
+                <input type="text" id="average" readonly>
+
+                <label>Grade</label>
+                <input type="text" id="grade" readonly>
+
+                <p class="rules">
+                    Marks between 100 and 70 → A<br>
+                    Marks between 69 and 60 → B<br>
+                    Marks between 59 and 50 → C<br>
+                    Marks below 50 → Failed
+                </p>
+            </div>
+
+        </div>
+
+        <!-- COLUMN 4 -->
+        <div class="column">
+
+            <div class="box">
+                <h3 class="title-black">ADVENTIST UNIVERSITY OF CENTRAL AFRICA</h3>
+                <p>
+                    The Adventist University of Central Africa is pleased to announce...
+                </p>
+                <img src="img/pic1.jpg" class="full-img">
+            </div>
+
+            <div class="box">
+                <h3 class="title-blue">Professional Courses:</h3>
+                <p>
+                    Certified Ethical Hacker (CEH), Diploma in Theology,
+                    Cisco Networking, SPSS, Research and Statistics...
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
