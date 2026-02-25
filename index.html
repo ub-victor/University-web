@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>IT Web Site</title>
+    <title>AUCA Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- NAVBAR -->
     <nav>
-        <img src="img/logo2.png" class="logo">
+        <div class="logo">
+            <img src="img/logo2.png">
+        </div>
         <ul>
             <li>HOME</li>
             <li>APPLICATION</li>
@@ -24,38 +26,37 @@
     </div>
 
     <!-- MAIN CONTAINER -->
-    <div class="container">
+    <div class="main-container">
 
         <!-- COLUMN 1 -->
         <div class="column">
-
-            <div class="box">
+            <div class="section border-bottom">
                 <h3 class="title-black">About AUCA</h3>
                 <p>
-                    The Adventist University of Central Africa (AUCA) known as MUDENDE
+                    The Adventist University of Central Africa (AUCA) known as MUDENDE 
                     is a Seventh-day Adventist Institution of Higher Learning...
                 </p>
-                <img src="img/pic11.jpg" class="full-img">
+                <img src="img/pic11.jpg" class="image">
             </div>
 
-            <div class="box">
+            <div class="section">
                 <h3 class="title-blue">AUCA: A Modern-Day Calling</h3>
                 <p>
                     From the very beginning, God called Israel to be a light to the nations...
                 </p>
             </div>
-
         </div>
 
         <!-- COLUMN 2 -->
-        <div class="column background-column">
+        <div class="column col2">
             <div class="inner-box">
                 <h3>Description of IT Faculty</h3>
                 <p>
-                    The Faculty of Information Technology is the unique Faculty into the Schools of Sciences...
+                    The Faculty of Information Technology is the unique Faculty 
+                    into the Schools of Sciences at AUCA...
                 </p>
-
-                <h4>Departments in AUCA:</h4>
+                <br>
+                <strong>Departments:</strong>
                 <ul>
                     <li>Software Engineering</li>
                     <li>Networking</li>
@@ -67,69 +68,54 @@
         <!-- COLUMN 3 -->
         <div class="column">
 
-            <div class="box">
+            <div class="section border-bottom">
                 <h3>CALCULATE STUDENTS MARKS:</h3>
+                <pre>
+Student Name:  <input type="text" id="name">
+Student ID:    <input type="text" id="id">
+Department:    <input type="text" id="dept">
 
-                <label>Student Names:</label>
-                <input type="text">
+Coursework/30: <input type="number" id="cw">
+Mid-Term/30:   <input type="number" id="mid">
+Final Exam/40: <input type="number" id="fin">
 
-                <label>Student ID:</label>
-                <input type="text">
-
-                <label>Department:</label>
-                <input type="text">
-
-                <label>Course Work /30:</label>
-                <input type="number" id="cw">
-
-                <label>Mid-Term /30:</label>
-                <input type="number" id="mid">
-
-                <label>Final Exam /40:</label>
-                <input type="number" id="exam">
-
-                <button onclick="calculate()">Calculate</button>
+<button onclick="calculate()">CALCULATE</button>
+                </pre>
             </div>
 
-            <div class="box">
-                <label>Total</label>
-                <input type="text" id="total" readonly>
+            <div class="section">
+                <pre>
+TOTAL:   <input type="text" id="total" readonly>
+AVERAGE: <input type="text" id="average" readonly>
+GRADE:   <input type="text" id="grade" readonly>
 
-                <label>Average</label>
-                <input type="text" id="average" readonly>
-
-                <label>Grade</label>
-                <input type="text" id="grade" readonly>
-
-                <p class="rules">
-                    Marks between 100 and 70 → A<br>
-                    Marks between 69 and 60 → B<br>
-                    Marks between 59 and 50 → C<br>
-                    Marks below 50 → Failed
-                </p>
+Rules:
+Marks between 70 and 100 → A
+Marks between 60 and 69.9 → B
+Marks between 50 and 59.9 → C
+Below 50 → Failed
+                </pre>
             </div>
 
         </div>
 
         <!-- COLUMN 4 -->
         <div class="column">
-
-            <div class="box">
-                <h3 class="title-black">ADVENTIST UNIVERSITY OF CENTRAL AFRICA</h3>
+            <div class="section">
+                <h3 class="title-black">Adventist University of Central Africa</h3>
                 <p>
                     The Adventist University of Central Africa is pleased to announce...
                 </p>
-                <img src="img/pic1.jpg" class="full-img">
+                <img src="img/pic1.jpg" class="image">
             </div>
 
-            <div class="box">
-                <h3 class="title-blue">Professional Courses:</h3>
+            <div class="section">
+                <h3 class="title-blue">Professional Courses</h3>
                 <p>
                     Certified Ethical Hacker (CEH), Diploma in Theology,
-                    Cisco Networking, SPSS, Research and Statistics...
+                    Cisco Certified Network Associate (CCNA)...
                 </p>
             </div>
-
         </div>
 
     </div>
